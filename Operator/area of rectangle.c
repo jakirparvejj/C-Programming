@@ -1,19 +1,15 @@
-// Write a program that calculate Three number area of tringle
-
+// Write a program that area of rectangle
 #include <stdio.h>
 int main ()
 {
-    float a,b,c,s,area;
+    float height,width,area;
 
-    printf("Enter Three Value: ");
-    scanf("%f %f %f",&a, &b, &c);
+    printf("Enter Height and Width: ");
+    scanf("%f %f",&height,&width);
 
-    s=(a+b+c)/2;
+    area= height * width;
 
-    area = sqrt (s*(s-a)*(s-b)*(s-c));
-
-    printf(" The Area is : %.2f\n",area);
-
+    printf("The area is: %.2f",area);
 
     return  0;
 }
